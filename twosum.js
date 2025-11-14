@@ -1,10 +1,10 @@
-const target = prompt("Enter the target number:");
-const numsInput = prompt("Enter numbers separated by commas:");
+const target = prompt("Enter the target number:"); //User input for target
+const numsInput = prompt("Enter numbers separated by commas:"); //user input for nums array
 const nums = numsInput.split(",").map(Number);
 
 
 function twoSum(nums, target) {
-    const finallist = new Map(); // To store value -> index mapping
+    const finallist = new Map(); // To store value -> index mapping (basic dictionary key value pairs)
     for (let i = 0; i < nums.length; i++){
         const complement = target - nums[i];
         if (finallist.has(complement)) {
