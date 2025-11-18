@@ -13,8 +13,8 @@ function lengthOfLongestSubstring(s) {
     return maxLen;
 }
 const inputString = prompt("Enter a string:"); // User input for the string
-const result = lengthOfLongestSubstring(inputString);
-console.log(result);
+const outcome = lengthOfLongestSubstring(inputString);
+console.log(outcome);
 
 // Example for the length Of Longest Substring
 // s = "abcabcbb" (showing each iteration):
