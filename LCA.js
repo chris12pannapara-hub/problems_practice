@@ -7,4 +7,10 @@ function lowestCommonAncestor(root, p, q) {
 }
 // Example usage:
 // Assuming a binary tree structure is defined elsewhere
-// const root = ...; // root of the binary tree
+// Simple logic to demonstrate LCA function
+// Build example tree:
+//       3
+//      / \
+//     5   1
+//    / \
+//   6   2
