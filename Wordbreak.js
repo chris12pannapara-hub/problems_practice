@@ -15,7 +15,9 @@ function wordBreak(s, wordDict) {
     }
     return dp[s.length];
 }
-const s = prompt("Enter the string:"); // User input for the string
+const io = prompt("Enter the string:"); // User input for the string
+const s = io.replace(/[.;,:'"/><{}[\]-]/g, "").trim(); // Clean the input string
+console.log(s);
 const wordDictInput = prompt("Enter words for the dictionary separated by commas:");
 const wordDict = wordDictInput.split(",").map(word => word.trim());
 const result = wordBreak(s, wordDict);
